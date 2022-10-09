@@ -7,12 +7,12 @@
                     <div class="top_link"><a href="http://localhost:8080/login"><i class='fa fa-arrow-circle-left'>กลับสู่หน้าหลัก</i></a></div>
                     <div class="contact">
                         <form v-on:submit.prevent = "createUser">
-                                <h3>สร้างผู้ใช้</h3>
-                                <input type="text" v-model="user.name" placeholder="NAME">
-                                <input type="text" v-model="user.lastname" placeholder="LASTNAME">
-                                <input type="text" v-model="user.email" placeholder="USERNAME">
-                                <input type="text" v-model="user.password" placeholder="PASSWORD">
-                                <button class="submit">สร้างผู้ใช้ใหม่</button>
+                                <h3>สมัครสมาชิกโรงแรม</h3>
+                                <input type="text" v-model="user.name" placeholder="ชื่อ">
+                                <input type="text" v-model="user.lastname" placeholder="นามสกุล">
+                                <input type="text" v-model="user.email" placeholder="ชื่อสมาชิก">
+                                <input type="text" v-model="user.password" placeholder="รหัสผ่านสมาชิก">
+                                <button class="submit">สมัครสมาชิก</button>
                         </form>
                     </div>
                 </div>

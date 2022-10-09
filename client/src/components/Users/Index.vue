@@ -7,18 +7,15 @@
                 <h6 align = 'right'><a><a v-on:click.prevent="logout" v-on:click="navigateTo('/login')"><i class="fa fa-sign-out" aria-hidden="true"></i><b> ออกจากระบบ</b></a></a></h6>
                 <center>
                
-                <h1><b> ผู้ใช้งานระบบ </b></h1>
-                <h5>จำนวนผู้ใช้งาน {{ users.length }} คน</h5>
+                <h1><b> สมาชิก Hotel Bangkok </b></h1>
+                <h5>จำนวนสมาชิกโรงแรม {{ users.length }} คน</h5>
                 
                 <hr>
             </center>
-            <div class="d-grid gap-2 col-6 mx-auto">
-                <center><b-button variant="btn btn-success" v-on:click="navigateTo('/user/create/')"><i class='fa fa-user-plus'></i> สร้างผู้ใช้ </b-button></center>
-            
-            </div>
+
             <br>
         <div class="box" v-for="user in users" v-bind:key="user.id">
-            <h4><p><b>User ที่ :</b> {{ user.id }}</p></h4>
+            <h4><p><b>สมาชิก ที่ :</b> {{ user.id }}</p></h4>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Name :</b> {{ user.name }}</p>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Lastname :</b> {{ user.lastname }}</p>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Username :</b> {{ user.email }}</p>

@@ -6,11 +6,11 @@
                         <div class="left">
                             <div class="contact">
                                 <form v-on:submit.prevent="onLogin">
-                                    <h3><b>เข้าสู่ระบบ</b></h3>
-                                    <input type="text" v-model="email" placeholder="USERNAME">
-                                    <input type="password" v-model="password" placeholder="PASSWORD">
+                                    <h4><b>เข้าสู่ระบบสมาชิก</b></h4>
+                                    <input type="text" v-model="email" placeholder="ชื่อสมาชิก">
+                                    <input type="password" v-model="password" placeholder="รหัสผ่านสมาชิก">
                                     <p></p>
-                                    <div class="top_link"><a href="http://localhost:8080/user/create/"><i class='fa fa-plus-square-o'>สร้างผู้ใช้งาน</i></a></div>
+                                    <div class="top_link"><a href="http://localhost:8080/user/create/"><i class='fa fa-plus-square-o'> สมัครสมาชิก</i></a></div>
                                     <br>
                                     <center><dev class = "error" v-if="error">{{error}}</dev></center>
                                     <button class="submit">เข้าสู่ระบบ</button>

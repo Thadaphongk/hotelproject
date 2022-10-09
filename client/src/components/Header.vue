@@ -3,11 +3,10 @@
         <div class="sidebar"> 
             <center><i class="fa fa-building-o" aria-hidden="true"></i>
             <h1 class="text-center"><b>Hotel Bangkok</b></h1></center>
-            <a><router-link :to="{name: 'login'}"><i class="fa fa-user" aria-hidden="true"></i><b> เข้าสู่ระบบ</b></router-link></a>
-            <a><router-link :to="{name: 'users'}"><i class="fa fa-address-card" aria-hidden="true"></i><b> สร้างผู้ใช้</b></router-link></a> 
+            <a><router-link :to="{name: 'login'}"><i class="fa fa-user" aria-hidden="true"></i><b> ดูสมาชิกโรงแรม</b></router-link></a>
             <a><router-link :to="{name: 'hotels'}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><b>รายการโรงแรม</b></router-link></a>
             <a><router-link :to="{name: 'bloghotels'}"><i class="fa fa-calendar-check-o" aria-hidden="true"></i><b> จองที่พักโรงแรม</b></router-link></a>
-            
+            <a><a v-on:click.prevent="logout" v-on:click="navigateTo('/')"><i class="fa fa-sign-out" aria-hidden="true"></i><b> ออกจากระบบ</b></a></a>
         </div>
     </div>
 </template>

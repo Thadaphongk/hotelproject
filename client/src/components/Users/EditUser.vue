@@ -7,7 +7,7 @@
                     <div class="top_link"><a href="http://localhost:8080/users"><i class='fa fa-arrow-circle-left'>กลับสู่หน้าหลัก</i></a></div>
                     <div class="contact">
                         <form v-on:submit.prevent = "editUser">
-                            <h3>แก้ไขข้อมูลผู้ใช้</h3>
+                            <h3>แก้ไขข้อมูลสมาชิกโรงแรม</h3>
                                 <input type="text" v-model="user.name" placeholder="NAME">
                                 <input type="text" v-model="user.lastname" placeholder="LASTNAME">
                                 <input type="text" v-model="user.email" placeholder="USERNAME">

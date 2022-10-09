@@ -6,7 +6,7 @@
         <b-col cols="10" class="bg1">
           <center>
             <h1><b>Hotel Bangkok</b></h1>
-            <h5>กรอกข้อมูลเพื่อใช้ในการจองคิว</h5></center>
+            <h5>กรอกข้อมูลเพื่อใช้ในการจองโรงแรม</h5></center>
           <hr/>
           <form class="box1" v-on:submit.prevent="createBloghotel">
             <p> ชื่อ : <input type="text" class="form-control" v-model="bloghotel.firstname" /> </p>
@@ -30,11 +30,10 @@
             
             <hr>
             <p>
-              <b-button variant="success" type="submit">ยืนยันการจอง</b-button
+              <b-button variant="success" type="submit"><i class="fa fa-check-square-o">ยืนยันการจอง</i></b-button
               >
-              <b-button variant="danger" type="reset">Reset</b-button
-              >
-              <b-button variant="secondary" v-on:click="navigateTo('/bloghotels')">ย้อนกลับ</b-button>
+              <b-button variant="danger" type="reset"><i class="fa fa-refresh"> รีเซ็ต</i></b-button>
+              <b-button variant="secondary" v-on:click="navigateTo('/bloghotels')"><i class="fa fa-arrow-left">ย้อนกลับ</i></b-button>
             </p>
           </form>
         </b-col>
